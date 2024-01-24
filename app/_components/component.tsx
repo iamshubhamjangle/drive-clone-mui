@@ -17,6 +17,7 @@ import ListItemText from "@mui/material/ListItemText";
 import IconButton from "@mui/material/IconButton";
 import Avatar from "@mui/material/Avatar";
 import Slider from "@mui/material/Slider";
+import Button from "@mui/material/Button";
 
 export {
   Box,
@@ -36,4 +37,5 @@ export {
   Paper,
   IconButton,
   Slider,
+  Button,
 };
