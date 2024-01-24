@@ -10,5 +10,10 @@ const config: Config = {
     extend: {},
   },
   plugins: [],
+  corePlugins: {
+    preflight: false,
+  },
+  important: "#root",
 };
+
 export default config;
