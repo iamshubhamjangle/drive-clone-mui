@@ -9,7 +9,7 @@ export default function Home() {
       <header className="bg-[#F8FAFD] col-span-full">
         <Navbar />
       </header>
-      <aside className="bg-green-500">
+      <aside className="bg-[#F8FAFD]">
         <LeftSidebar />
       </aside>
       <main className="bg-yellow-500">
