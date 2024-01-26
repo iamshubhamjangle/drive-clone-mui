@@ -82,14 +82,14 @@ const LeftSidebar = () => {
                 return (
                   <div
                     key={idx2}
-                    className={`cursor-pointer text-gray-600 flex items-center gap-3 px-[15px] py-[5px] ${
+                    className={`cursor-pointer flex items-center gap-3 px-[15px] py-[5px] ${
                       item2.focused
                         ? "bg-sky-200 text-black rounded-full"
                         : "hover:bg-gray-200 hover:text-black hover:rounded-full"
                     }`}
                   >
                     {item2.icon}
-                    <span className="text-sm">{item2.title}</span>
+                    <span className="text-sm font-medium">{item2.title}</span>
                   </div>
                 );
               })}
