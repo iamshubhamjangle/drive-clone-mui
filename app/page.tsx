@@ -12,7 +12,7 @@ export default function Home() {
       <aside className="bg-[#F8FAFD]">
         <LeftSidebar />
       </aside>
-      <main className="bg-yellow-500">
+      <main className="bg-[#FFF] rounded-t-2xl p-6">
         <MainContent />
       </main>
       <aside className="bg-[#F8FAFD]">
