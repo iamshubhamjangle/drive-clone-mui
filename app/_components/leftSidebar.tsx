@@ -15,12 +15,12 @@ const sidebaritems = [
     {
       icon: <HomeIcon />,
       title: "Home",
-      focused: true,
+      focused: false,
     },
     {
       icon: <SaveIcon />,
       title: "My Drive",
-      focused: false,
+      focused: true,
     },
     {
       icon: <PhonelinkIcon />,
