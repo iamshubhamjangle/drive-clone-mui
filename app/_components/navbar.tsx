@@ -43,11 +43,6 @@ const Navbar = () => {
               style: {},
             }}
           />
-          <IconButton
-            type="button"
-            sx={{ p: "10px" }}
-            aria-label="search"
-          ></IconButton>
           <IconButton sx={{ p: "10px" }} aria-label="directions">
             <TuneIcon />
           </IconButton>
