@@ -1,4 +1,4 @@
-import { Button } from "@/app/_components/component";
+import { Button, IconButton } from "@/app/_components/component";
 import AddIcon from "@mui/icons-material/Add";
 import HomeIcon from "@mui/icons-material/Home";
 import SaveIcon from "@mui/icons-material/Save";
@@ -80,17 +80,15 @@ const LeftSidebar = () => {
             <div key={idx} className="my-6">
               {item.map((item2, idx2) => {
                 return (
-                  <div
+                  <Button
                     key={idx2}
-                    className={`cursor-pointer flex items-center gap-3 px-[15px] py-[5px] ${
-                      item2.focused
-                        ? "bg-sky-200 text-black rounded-full"
-                        : "hover:bg-gray-200 hover:text-black hover:rounded-full"
+                    className={`w-full text-gray-700 rounded-full capitalize flex items-center justify-start gap-3 px-[15px] py-[5px] ${
+                      item2.focused && "bg-sky-200 text-black rounded-full"
                     }`}
                   >
                     {item2.icon}
                     <span className="text-sm font-medium">{item2.title}</span>
-                  </div>
+                  </Button>
                 );
               })}
             </div>

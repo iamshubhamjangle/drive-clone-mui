@@ -16,7 +16,7 @@ const Navbar = () => {
     <div className="mx-4 h-full flex justify-between align-middle">
       <div className="flex items-center">
         <Image alt="logo" width={40} height={40} src="/logo.png" />
-        <span className="text-xl pl-1">Drive</span>
+        <span className="text-xl font-medium pl-2 pb-1">Drive</span>
       </div>
       <div className="flex items-center">
         <Paper
@@ -32,7 +32,7 @@ const Navbar = () => {
             height: "full",
           }}
         >
-          <IconButton sx={{ p: "10px" }} aria-label="menu">
+          <IconButton sx={{ p: "10px" }} aria-label="search">
             <SearchIcon />
           </IconButton>
           <InputBase
@@ -48,16 +48,24 @@ const Navbar = () => {
             sx={{ p: "10px" }}
             aria-label="search"
           ></IconButton>
-          <IconButton sx={{ p: "10px" }} aria-label="directions">
+          <IconButton sx={{ p: "10px" }} aria-label="Filters">
             <TuneIcon />
           </IconButton>
         </Paper>
       </div>
-      <div className="flex items-center gap-6">
-        <HelpOutlineIcon className="text-gray-600" />
-        <SettingsIcon className="text-gray-600" />
-        <AppsIcon className="text-gray-600" />
-        <Avatar alt="my_profile" src="./user_profile.jpg" />
+      <div className="flex items-center gap-3">
+        <IconButton aria-label="Help">
+          <HelpOutlineIcon className="text-gray-600" />
+        </IconButton>
+        <IconButton aria-label="Help">
+          <SettingsIcon className="text-gray-600" />
+        </IconButton>
+        <IconButton aria-label="Help">
+          <AppsIcon className="text-gray-600" />
+        </IconButton>
+        <IconButton aria-label="Help">
+          <Avatar alt="my_profile" src="./user_profile.jpg" />
+        </IconButton>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { IconButton } from "@/app/_components/component";
 
 const RightSidebar = () => {
   const listItems = [
@@ -21,16 +22,17 @@ const RightSidebar = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-7 items-center pt-2">
+    <div className="flex flex-col gap-3 items-center pt-2">
       {listItems.map((item, idx) => (
-        <Image
-          key={idx}
-          className="hover:bg-slate-200 hover:cursor-pointer rounded-md p-2"
-          alt={item.title}
-          src={item.imageSrc}
-          width={38}
-          height={38}
-        />
+        <IconButton key={idx}>
+          <Image
+            className="p-2"
+            alt={item.title}
+            src={item.imageSrc}
+            width={38}
+            height={38}
+          />
+        </IconButton>
       ))}
     </div>
   );
