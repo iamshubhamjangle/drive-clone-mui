@@ -13,51 +13,51 @@ import CloudQueueIcon from "@mui/icons-material/CloudQueue";
 const sidebaritems = [
   [
     {
-      icon: <HomeIcon />,
+      icon: <HomeIcon className="w-5" />,
       title: "Home",
       focused: true,
     },
     {
-      icon: <SaveIcon />,
+      icon: <SaveIcon className="w-5" />,
       title: "My Drive",
       focused: false,
     },
     {
-      icon: <PhonelinkIcon />,
+      icon: <PhonelinkIcon className="w-5" />,
       title: "Computers",
       focused: false,
     },
   ],
   [
     {
-      icon: <GroupIcon />,
+      icon: <GroupIcon className="w-5" />,
       title: "Shared with me",
       focused: false,
     },
     {
-      icon: <ScheduleIcon />,
+      icon: <ScheduleIcon className="w-5" />,
       title: "Recent",
       focused: false,
     },
     {
-      icon: <StarBorderIcon />,
+      icon: <StarBorderIcon className="w-5" />,
       title: "Starred",
       focused: false,
     },
   ],
   [
     {
-      icon: <ReportGmailerrorredIcon />,
+      icon: <ReportGmailerrorredIcon className="w-5" />,
       title: "Spam",
       focused: false,
     },
     {
-      icon: <DeleteForeverIcon />,
+      icon: <DeleteForeverIcon className="w-5" />,
       title: "Trash",
       focused: false,
     },
     {
-      icon: <CloudQueueIcon />,
+      icon: <CloudQueueIcon className="w-5" />,
       title: "Storage",
       focused: false,
     },
@@ -70,19 +70,19 @@ const LeftSidebar = () => {
       <Button
         variant="contained"
         startIcon={<AddIcon />}
-        className="w-full py-4 bg-white text-gray-700 text-[16px] font-semibold capitalize rounded-2xl"
+        className="w-full py-4 bg-white text-gray-700 text-[16px] font-semibold capitalize rounded-2xl shadow-md"
       >
         New
       </Button>
       <div>
         {sidebaritems.map((item, idx) => {
           return (
-            <div key={idx} className="my-6">
+            <div key={idx} className="my-4">
               {item.map((item2, idx2) => {
                 return (
                   <Button
                     key={idx2}
-                    className={`w-full text-gray-700 rounded-full capitalize flex items-center justify-start gap-3 px-[15px] py-[5px] ${
+                    className={`w-full text-gray-700 rounded-full capitalize flex items-center justify-start gap-3 px-[15px] py-[3px] ${
                       item2.focused && "bg-sky-200 text-black rounded-full"
                     }`}
                   >
