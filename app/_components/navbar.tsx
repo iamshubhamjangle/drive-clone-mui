@@ -64,7 +64,7 @@ const Navbar = () => {
           <AppsIcon className="text-gray-600" />
         </IconButton>
         <IconButton aria-label="Help">
-          <Avatar alt="my_profile" src="./user_profile.jpg" />
+          <Avatar alt="my_profile" src="/icons/user_profile.jpg" />
         </IconButton>
       </div>
     </div>
