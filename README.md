@@ -13,3 +13,10 @@ MUI Installation
 ```bash
 yarn add @mui/material-nextjs @emotion/cache
 ```
+
+Docker
+
+```bash
+docker build -t drive-clone:0.1
+docker run -d -p 3000:3000 drive-clone:0.1
+```
