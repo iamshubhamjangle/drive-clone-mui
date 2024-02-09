@@ -19,8 +19,8 @@ yarn add @mui/material-nextjs @emotion/cache
 Create a Dockerfile and run build command.
 
 ```bash
-docker build -t drive-clone:0.1                 # Build the image
-docker run -d -p 3000:3000 drive-clone:0.1      # Run the image in detach mode with given port
+docker build -t drive-clone:1.0 .               # Build the image
+docker run -d -p 3000:3000 drive-clone:1.0      # Run the image in detach mode with given port
 ```
 
 ## Kubernetes
