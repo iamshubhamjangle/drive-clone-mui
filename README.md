@@ -28,8 +28,8 @@ docker run -d -p 3000:3000 drive-clone:1.0      # Run the image in detach mode w
 Create a project repository on dockerhub.
 
 ```bash
-docker tag drive-clone:0.1 imshubhamj/meow:0.1  # tag your local image with repo name
-docker push imshubhamj/meow:0.1                 # push the image to repo
+docker tag drive-clone:1.0 imshubhamj/meow:1.0  # tag your local image with repo name
+docker push imshubhamj/meow:1.0                 # push the image to repo
 ```
 
 Now apply your deployment.yaml

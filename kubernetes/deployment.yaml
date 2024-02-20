@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: nextjs-container
-          image: imshubhamj/meow:0.1
+          image: imshubhamj/meow:1.0
           ports:
             - containerPort: 3000
 ---
